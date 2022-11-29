@@ -1,1 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Эмоции</title>
+    <style media="screen">
+      /* первый смайл */
+      .emo1 {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        position: relative;
+        background: url('images/emo.png');
+      }
+      .emo-m1 {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/emo.png');
+        background-position: -160px 0;
+        animation: mouth1 2s steps(1) infinite;
+      }
+      .emo-e1 {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/emo.png');
+        background-position: -480px 0;
+        animation: eyes1 2s steps(1) infinite;
+      }
+      @keyframes eyes1 {
+        0% {background-position: -480px top;}
+        66% {background-position: -640px top;}
+      }
+      @keyframes mouth1 {
+        0% {background-position: -160px top;}
+        66% {background-position: -320px top;}
+      }
+      /* второй */
+      .emo2 {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        position: relative;
+        background: url('images/emo.png');
+      }
+      .emo-m2 {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/emo.png');
+        background-position: -160px -320px;
+        animation: mouth2 2s steps(1) infinite;
+      }
+      .emo-e2 {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/emo.png');
+        background-position: -480px -320px;
+        animation: eyes2 2s steps(1) infinite;
+      }
+      @keyframes eyes2 {
+        0% {background-position: -480px ;}
+        66% {background-position: -640px ;}
 
+      }
+      @keyframes mouth2 {
+        0% {background-position: -160px ;}
+        66% {background-position: -320px ;}
+
+      }
+      /* третий */
+      .emo3 {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        position: relative;
+        background: url('images/emo.png');
+      }
+      .emo-m3 {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/emo.png');
+        background-position: -640px -480px;
+        animation: mouth3 1s steps(1) infinite;
+      }
+      .emo-e3 {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/emo.png');
+        background-position: -160px -480px;
+        animation: eyes3 3s steps(1) infinite;
+      }
+      .emo-b3 {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/emo.png');
+        background-position: -160px -480px;
+        animation: brush3 3s steps(1) infinite;
+      }
+      @keyframes brush3 {
+        33% {background-position: -480px -480px;}
+
+      }
+      @keyframes mouth3 {
+        0% {background-position: -640px -480px;}
+        33% {background-position: -800px -480px;}
+
+      }
+      @keyframes eyes3 {
+        0% {background-position: -160px -480px;}
+        33% {background-position: -320px -480px;}
+
+      }
+      /* четвертый */
+      .emo4 {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        position: relative;
+        background: url('images/emo.png');
+      }
+      .emo-m4 {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/emo.png');
+        background-position: -640px -640px;
+        animation: mouth4 3s steps(1) infinite;
+      }
+      .emo-e4 {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/emo.png');
+        background-position: -160px -640px;
+        animation: eyes4 3s steps(1) infinite;
+      }
+      @keyframes eyes4 {
+        0% {background-position: -160px -640px;}
+        33% {background-position: -320px -640px;}
+        66% {background-position: -480px -640px;}
+      }
+      @keyframes mouth4 {
+        0% {background-position: -640px -640px;}
+        66% {background-position: -800px -640px;}
+
+      }
+      .emo5 {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        position: relative;
+        background: url('images/emo.png');
+      }
+      .emo-m5 {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/emo.png');
+        background-position: -160px -160px;
+        animation: mouth5 3s steps(1) infinite;
+      }
+      .emo-e5 {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/emo.png');
+        background-position: -320px -160px;
+        animation: eyes5 3s steps(1) infinite;
+      }
+      @keyframes eyes5 {
+        0% {background-position: -320px -160px;}
+        33% {background-position: -480px -160px;}
+        66% {background-position: -640px -160px;}
+        99% {background-position: -800px -160px;}
+      }
+      @keyframes mouth5 {
+        0% {background-position: -160px -160px;}
+      }
+    </style>
+  </head>
+  <body>
+    <!-- первый -->
+    <div class="emo1">
+      <div class="emo-e1"></div>
+      <div class="emo-m1"></div>
+    </div>
+    <!-- второй -->
+    <div class="emo2">
+      <div class="emo-e2"></div>
+      <div class="emo-m2"></div>
+    </div>
+    <!-- третий -->
+    <div class="emo3">
+      <div class="emo-e3"></div>
+      <div class="emo-m3"></div>
+      <div class="emo-b3"></div>
+    <!-- четвертый -->
+    </div>
+    <div class="emo4">
+      <div class="emo-e4"></div>
+      <div class="emo-m4"></div>
+    </div>
+    <!-- пятый -->
+    <div class="emo5">
+      <div class="emo-e5"></div>
+      <div class="emo-m5"></div>
+    </div>
+  </body>
+</html>
